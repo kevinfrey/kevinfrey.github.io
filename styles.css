@@ -1,0 +1,186 @@
+/* FIRST: tear it all down as per the edict of mr meyer (http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+
+/* NOW: start the slow process of rebuilding */
+
+/* THE BASICS */
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 200;
+	font-size: 90%;
+	color: #281e1e;
+	line-height: 1.125em;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+
+/* THE HEADERS */
+
+h1 {
+  font-size: 4.8em;
+  font-weight: bold;
+  letter-spacing: -.05em;
+  margin-bottom: .2em;
+}
+
+h2 {
+  font-size: 3.6em;
+  font-weight: bold;
+  letter-spacing: -.05em;
+  margin-bottom: .2em;
+}
+
+h3 {
+  display: inline;
+  font-size: 1.8em;
+}
+
+
+/* A POTPURRI OF TEXT */
+
+.plain-text {
+    font-size: 1.8em;
+    line-height: 1.4em;
+}
+
+.plain-text p {
+  margin: 0 0 1em;
+}
+
+.plain-text em {
+  font-size: 1.125em;
+  font-family: Palatino, Georgia, 'Times New Roman', serif;
+  font-style: italic;
+}
+
+.plain-text a, .plain-text a:visited {
+  font-weight: bold;
+  color: #281e1e;
+  text-decoration: none;
+}
+
+.plain-text a:hover {
+  color: #000;
+}
+
+
+/* LISTS! */
+
+.inline-list {
+  display: inline;
+}
+
+.inline-list li {
+  display: inline;
+  padding: 0 .5em 0 .5em;
+}
+
+.inline-list li {
+  border-left: 1px solid #86a938;
+}
+
+.inline-list li:first-child {
+  border: 0;
+}
+
+
+/* THE STRUCTURE */
+
+#wrapper {
+  width: 54em;
+  margin: 4em auto 4em;
+  max-width: calc(100% - 2em);
+  padding: 0 1em;
+}
+
+
+/* EXTRAS */
+
+.block {
+  padding: 2em 0;
+  margin: 1em 0;
+}
+
+.centered {
+  text-align: center;
+}
+
+.delineated {
+  border-bottom: .25em solid #CECECE;
+}
+
+.butt-space {
+  padding-bottom: 4em;
+}
+
+.head-space {
+  margin-top: 2em;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 720px) {
+  body {
+    font-size: 80%;
+  }
+  h1 {
+    font-size: 3.6em;
+  }
+  .plain-text {
+    font-size: 1.4em;
+  }
+}
