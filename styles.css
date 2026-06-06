@@ -89,6 +89,18 @@ h3 {
 }
 
 
+/* PROFILE PIC */
+
+.profile-pic {
+  display: block;
+  margin: 0 auto 1.5em;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
 /* A POTPURRI OF TEXT */
 
 .plain-text {
